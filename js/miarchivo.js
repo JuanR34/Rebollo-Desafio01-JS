@@ -28,11 +28,13 @@ while (monto > 0 && operacion === ("comprar")) {
    if  (cotizacion === "oficial") {
    resultado =  dolarOficial * monto;
    resultadoA = resultado + (resultado * 0.63);
-    alert ("el monto en pesos a pagar es  $" + resultadoA);
+    alert ("El monto en pesos a pagar es  $" + resultadoA);
+    document.write ( " El monto en pesos a pagar es  $" + resultadoA);
     break
    } else if (cotizacion === "blue") {
        resultadoB = dolarBlue * monto;
-       alert("el monto en pesos a pagar es  $" + resultadoB);
+       alert("El monto en pesos a pagar es  $" + resultadoB);
+       document.write ( " El monto en pesos a pagar es  $" + resultadoB);
        break
    }
 }
@@ -44,6 +46,7 @@ while (monto > 0 && operacion === ("vender")) {
     if (cotizacion === "blue" || cotizacion === "oficial") {
         resultadoB = monto * dolarBlue;
         alert("El monto a recibir en pesos es $ " + resultadoB);
+        document.write ( " El monto a recibir en peso  $" + resultadoB);
         break
     } 
  }
